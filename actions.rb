@@ -1,5 +1,5 @@
 require './airplanes'
-require './hangers'
+require './hangars'
 
 ### planes ###
 plane = Airplane.new("Boing","Jet","Aarai",23)
@@ -10,26 +10,28 @@ plane3 = Airplane.new("Jets R You","Jetter","Rich Guy 1",99)
 plane4 = Airplane.new("Another Jet","Jetter","Rich Guy 1",80999)
 
 p plane.miles_flown
-### hangers ###
-hanger = Hanger.new("Hanger 1","JFK","Rich Guy 1")
-p hanger.capacity
 
-p hanger.add_airplane plane
-p hanger.add_airplane plane2
+### hangars ###
 
-p hanger.airplanes_count
+hangar = Hangar.new("Hangar 1","JFK","Rich Guy 1")
+p hangar.capacity
 
-p hanger.capacity
-p hanger.show_held_planes
-p Hanger.what_do_I_hold?
+p hangar.add_airplane plane
+p hangar.add_airplane plane2
+
+p hangar.airplanes_count
+
+p hangar.capacity
+p hangar.show_held_planes
+p Hangar.what_do_I_hold?
 p Airplane.how_many_wings?
 
-Hanger.airplanes_owned_by_hanger_owner "Rich1"
-#hanger.owner
-#hanger.airplanes
-#hanger.name_of_hanger
-#hanger.capacity
-#hanger.add_airplane plane
+Hangar.airplanes_owned_by_hangar_owner "Rich1"
+#hangar.owner
+#hangar.airplanes
+#hangar.name_of_hangar
+#hangar.capacity
+#hangar.add_airplane plane
 
-#hanger.airplanes_count
+#hangar.airplanes_count
 
