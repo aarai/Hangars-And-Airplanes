@@ -14,7 +14,7 @@ class Hangar
 	def add_airplane(plane)
 		if plane.class == Airplane
 			if @capacity == 0
-				"Looks like #{@name_of_hangar} hanger is full!"
+				"Looks like #{@name_of_hangar} hangar is full!"
 			else
 				@airplanes << plane
 				@capacity = @capacity - 1
