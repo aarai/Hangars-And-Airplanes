@@ -46,6 +46,11 @@ class Hangar
 	end
 
 
+	def airplanes_owned_by_hangar_owner
+		@airplanes.find_all do |airplane|
+			airplane.owner == @owner
+		end
+	end
 
 
 	#####Class Methods#####
@@ -54,16 +59,6 @@ class Hangar
 		"airplanes"
 	end
 	
-	def self.airplanes_owned_by_hangar_owner owner
-		 @owner = owner
-		 	 	[*@airplanes].each do |plane|
-				if line.include? @owner
-					puts "#{@owner} owns: #{plane}"
-				else
-					puts "Sorry Doesn't look like that owner owns any airplanes"
-				end
-		end
-	end
 end
 
 

@@ -18,7 +18,7 @@ class Airplane
 	end
 
 	def owner
-		"This airplane is owned by #{@owner}"
+		@owner
 	end
 
 	def miles_flown
